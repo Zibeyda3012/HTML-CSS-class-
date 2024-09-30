@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- yazdigimiz style.css fayli html elave etmek ucun link tagini istifade edirik -->
+    <title>Document</title>
+  </head>
+  <body class="window">
+    <!--
+        elementler 3 cur olur: 
+           - inline elementler  => yalniz oz kontenti(mezmunu) qeder yer tutan elementler.
+                                   Inline elementlere width ve height vermek olmur, margin vermek olmur.
+
+           - block elementler   => mezmunun olcusunden asili olmayaraq butun setri tutur.
+           - inline block elementler =>  ancaq oz kontenti qeder yer tutur,sadece qidth ,height kimi elementleri istifade ede bilirik.
+
+        element daxilinde yazilan ozellikler atribut, attribute daxilinde yazilanlar ise property sayilir.
+        meselen : <img> elementi daxilinde "style" attribute yazilir,style daxilinde yazilan "width" bizim propertyimiz ,
+        width : 300px; ise bizim value-muz sayilir.
+
+        Taglarin 2 novu var:
+            - self-closing tags
+            - open and close tags
+
+        shortcuts:
+                 ctrl+k+c => commente alir.
+                 ctrl+k+u => commentden cixarir.
+
+        Websetimiz yazanda mutleq ilk html fayli = > index.html olmalidir.
+
+        class => eger biz elementlerimizin meselen eyni dizayna sahib olmaqlarini isteyirikse onda onlari eyni classa
+        aid ede bilerik.
+           id => uniquedir.
+
+        Css-in novleri:
+         => inline
+         => internal
+         => external
+
+        Margin : top right bottom left
+        box-shadow : 0 0 0 0
+                   => axirinci pixel shadowun olcusu,yeni kenara ne qeder kolge dusur onu gosterir.
+                   => ucuncu pixel shadowun gucunu(opasity) gosterir
+                   => ikinci pixel yuxari ve asagi dogru shadowu surushdurmek ucundur.
+                   => birinci pixel sola ve saga dogru shadowu surushdurmek ucundur.
+                                         
+    -->
+
+    <div class="card">
+      <img class="img" src="https://static.independent.co.uk/2022/06/12/10/iStock-1199279669.jpg"
+           alt="" />
+
+      <h1 class="title">Cats</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, architecto? Similique, id eius quo veritatis sed non vero exercitationem aspernatur suscipit quia blanditiis quod maiores quibusdam quae animi laudantium. Veritatis!</p>
+      <button class="button">click</button>
+    </div>
+  </body>
+</html>
