@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="registerForm">
+      <h1>Registration Form</h1>
+
+      <div>
+        <form action="">
+          <div class="formItem">
+            <label for="firstname">Firstname</label>
+            <input required name="firstname" placeholder="Name" type="text" />
+          </div>
+
+          <div class="formItem">
+            <label for="lastname">Lastname</label>
+            <input required name="lastname" placeholder="Lastname" type="text" />
+          </div>
+
+        
+          <div class="formEmail">
+            <label for="email">Email</label>
+            <input
+              name="email"
+              required
+              placeholder="Email"
+              type="email"
+              name=""
+              id=""
+            />
+          </div>
+
+          <div class="formBirthdate">
+             <label for="birthDate">Date of birth</label>
+             <input required type="date" name="birthDate" id="">
+          </div>
+
+
+          <div class="formPassword">
+            <label for="password">Password</label>
+            <input required placeholder="password" type="password" name="" id="" />
+          </div>
+
+          <div class="row">
+            <label for="gender">Gender: </label>
+            <div class="genderType">
+              <span>Male</span>
+              <input required type="radio" name="gender" value="male" id="">
+            </div>
+
+            <div class="genderType">
+              <span>Female</span>
+              <input required type="radio" name="gender" value="female" id="">
+            </div>
+          </div>
+
+          <div class="employment">
+            <label for="employment">Employment type</label>
+            <div class="checkBoxItem">
+              <input required type="checkbox" name="employment" id="">
+              <span>Student</span>
+            </div>
+
+            <div class="checkBoxItem">
+              <input required type="checkbox" name="employment" id="">
+              <span>Employed</span>
+            </div>
+
+            <div class="checkBoxItem">
+              <input required type="checkbox" name="employment" id="">
+              <span>Unemployed</span>
+            </div>
+
+            <div class="file">
+              <label for="chooseFile">Choose File: </label>
+              <input accept=".pdf,.docx" type="file" name="" id="">
+            </div>
+       
+            <button class="submitBtn" type="submit">Submit</button>
+
+
+          </div>
+
+          <!-- <div class="formItem">
+            <label for="age">Age</label>
+            <select name="age" id="">
+              <option selected disabled value="">Choose age</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+            </select>
+          </div> -->
+<!-- 
+          <input type="checkbox" name="" id="" />
+
+          <input type="submit" value="Register" /> -->
+          <!-- <button type="submit">Register</button> -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
