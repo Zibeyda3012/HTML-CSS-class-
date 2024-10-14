@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border: 1px solid lightgray;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    animation-name: slideUp ;
+    animation-duration: 3s;
+}
+
+.img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    filter: grayscale();
+    filter: blur(5px);
+}
+
+.title{
+    margin: 10px 0;
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color: darkorange;
+    width: 100px;
+    height: 40px;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    border-color: chocolate;
+    position: relative;
+}
+
+.button div{
+    width: 0;
+    height: 40px;
+    background-color: transparent;
+    padding: 10px 30px;
+}
+
+/* .button:hover{
+    scale: 1.1;
+    background-color: brown;
+    
+} */
+
+.button:hover{
+    scale: 1.1;
+}
+
+.button:hover div{
+    width: 100px; ;
+    background-color: brown;
+}
+.button p{
+    position: absolute;
+}
+
+.card:hover img{
+   filter: none;
+   transition: ease-in 500ms;
+}
+
+@keyframes slideUp {
+    from{
+        translate: 0 150vh;
+        scale: 200% 1;
+    }
+
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
