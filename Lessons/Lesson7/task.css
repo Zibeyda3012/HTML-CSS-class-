@@ -53,6 +53,7 @@ body{
     height: 40px;
     background-color: transparent;
     padding: 10px 30px;
+    overflow: hidden;
 }
 
 /* .button:hover{
